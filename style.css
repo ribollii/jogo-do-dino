@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.jogo{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: gray;
+}
+
+
+#nuvem{
+    width: 60px;
+    height: 60px;
+    background-image: url(img/nuvem.png);
+    background-size: 60px 60px;
+    position: relative;
+    top: -60px;
+    left: 450px;
+    animation: nuvem 6s infinite linear;
+
+}
+
+@keyframes nuvem{
+    0%{left: 450px;}
+    100%{left: 0px;}
+}
+
+#nuvemm{
+    width: 90px;
+    height: 90px;
+    background-image: url(img/nuvem.png);
+    background-size: 90px 90px;
+    position: relative;
+    top: -160px;
+    left: 450px;
+    animation: nuvemm 5s infinite linear;
+}
+@keyframes nuvemm{
+    0%{left: 450px;}
+    100%{left: 0px;}
+}
+
+#personagem{
+    width: 50px;
+    height: 50px;
+    background: url(img/dinooo.png.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 162px;
+    right: 8px;
+}
+.jump{
+    animation: jump 0.3s linear;
+}
+
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 130px;}
+    50%{top: 80px;}
+    80%{top: 130px;}
+    100%{top: 150px;}
+}
+
+#obstaculo{
+    width: 20px;
+    height: 40px;
+    background-image: url(img/cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 480px;
+    animation: obstaculo 1s infinite linear;
+}
+
+@keyframes obstaculo{
+    0%{left: 480px;}
+    100%{left: -40px;}
+}
+
+#gameOver {
+    display: center;
+    font-size: 70px;
+    position: absolute;
+    left: calc(50% - 181px);
+    top: calc(50% - 40px);
+    width: 200px;
+    height: 80px;
+    color: black;
+}
